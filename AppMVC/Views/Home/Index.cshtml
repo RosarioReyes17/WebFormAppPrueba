@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <form action="home/viewEjemplo" class="" method="post">
+        Your name: <input type="text" name="fname" size="20" />
+        <input type="submit" value="Submit" />
+    </form>
+    @{
+        string fname;
+        fname = Request.Form.Get("fname");
+
+
+        if (fname != null)
+        {
+            <br />
+            <p> <b>Hello</b>@fname);</p>
+            <p>How are you today?</p>
+
+
+        }
+
+        else
+        {
+
+            <p>ERROR</p>
+        }
+
+    }
+
+    <h2>ViewEjemplo</h2>
+</body>
+</html>
